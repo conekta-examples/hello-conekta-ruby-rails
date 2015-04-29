@@ -6,7 +6,7 @@ require 'conekta'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Cpmx
+module Conekta
   class Application < Rails::Application
     Conekta.api_key = Rails.application.secrets.conekta_private
     # Settings in config/environments/* take precedence over those specified here.
