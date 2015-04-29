@@ -7,8 +7,8 @@ class CheckoutsController < ApplicationController
       @charge = Conekta::Charge.create({
         amount: params['chargeInCents'],
         currency: "MXN",
-        description: "Pizza Delivery at #CPMX5",
-        reference_id: "001-id-CPMX5",
+        description: "Pizza Delivery at test",
+        reference_id: "001-id-test",
         details:
         {
           email: params['emailBuyer']
