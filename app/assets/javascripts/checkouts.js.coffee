@@ -13,7 +13,8 @@ conektaSuccessResponseHandler = (token) ->
 conektaErrorResponseHandler = (response) ->
   $form = $("#card-form")
   ### Muestra los errores en la forma ###
-  $form.find(".card-errors").text response.message
+  $form.find(".card-errors").text response.message_to_purchaser
+  # console.log response.message # para ver mensaje técnico.
   $form.find("button").prop "disabled", false
   return
 
